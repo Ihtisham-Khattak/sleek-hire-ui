@@ -15,5 +15,8 @@
     "cypress": "^12.8.1",
     "mocha": "^10.2.0",
     "playwright-webkit": "^1.32.3"
+  },
+  "dependencies": {
+    "cypress-plugin-xhr-toggle": "^1.0.0"
   }
 }

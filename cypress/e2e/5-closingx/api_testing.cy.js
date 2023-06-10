@@ -46,8 +46,10 @@ describe("Products api", () => {
     cy.request({
       method: "DELETE",
       url: "https://jsonplaceholder.typicode.com/posts/1",
-    })
-      .its("status")
-      .should("equal", 200);
+    }).then((response) => {
+      expect(response.status).to.eq(200);
+    });
+    // .its("status")
+    // .should("equal", 200);
   });
 });
